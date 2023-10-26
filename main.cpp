@@ -4,10 +4,17 @@ int main()
 {
 
 	cout << "Roman Mydzhyn" << endl;
+
 	cout << "Sviatoslav Humeniuk" << endl;
 		
-		
-		
-		
-		return 0;
+  cout << "Maksym Zolotarchuk" << endl;
+
+	cout << "Daria Fesenko" << endl;
+
+
+	
+	
+	
+	
+	return 0;
 }
