@@ -3,11 +3,11 @@ using namespace std;
 int main()
 {
 
-	cout << "Roman Mydzhyn" <<endl;
+	cout << "Roman Mydzhyn" << endl;
 
-
-
-
-
-	return 0;
+		
+		
+		
+		
+		return 0;
 }
