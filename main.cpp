@@ -4,6 +4,7 @@ int main()
 {
 
 	cout << "Roman Mydzhyn" << endl;
+	cout << "Daria Fesenko" << endl;
 
 	
 	
