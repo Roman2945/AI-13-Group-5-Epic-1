@@ -5,7 +5,11 @@ int main()
 
 	cout << "Roman Mydzhyn" << endl;
 
-	cout << "Yurii Sirenko" << endl;
+	cout << "Sviatoslav Humeniuk" << endl;
+
+	cout << "Maksym Zolotarchuk" << endl;
+
+	cout << "Daria Fesenko" << endl;
 
 	return 0;
 }
