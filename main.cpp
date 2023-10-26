@@ -4,7 +4,7 @@ int main()
 {
 
 	cout << "Roman Mydzhyn" << endl;
-
+	cout << "Sviatoslav Humeniuk" << endl;
 		
 		
 		
