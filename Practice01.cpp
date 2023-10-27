@@ -1,41 +1,33 @@
-#include <stdio.h>
-#include <math.h>
+#include <Cstdio>
+#include <cmath>
 
 char name[100];
-double principal;
-double rate;
-double years;
-int period;
-double compoundInterest;
+double rate, pricipal, amount, compoundInterest;
+int years, period;
 
-int main() {
-    printf("Enter Your Name: ");
-    scanf("%s", &name);
+int main()
+{
+	printf("Enter your name \n");
+	scanf("%s", &name);
 
+	printf("Enter the pricipal amount:");
+	scanf("%lf", &pricipal);
 
-    printf("Enter the principal amount: ");
-    scanf("%lf", &principal);
-    
+	printf("Enter the rate of interest:");
+	scanf("%lf", &rate);
 
-    printf("Enter the rate of interest (in percentage): ");
-    scanf("%lf", &rate);
-    
+	printf("Enter the number of years:");
+	scanf("%d", &years);
 
-    printf("Enter the number of years: ");
-    scanf("%lf", &years);
+	printf("Enter the number of times the interest is compounded per year:");
+	scanf("%d", &period);
 
+	double amount = pricipal * pow(1 + rate / period, period * years);
+	printf("the amount is %lf", amount);
+	printf("\n");
 
-    printf("Enter the number of times interest is compounded per year: ");
-    scanf("%d", &period);
-    
+	double compoundInterest = pricipal * pow(1 + rate / period, period * years) - pricipal;
+	printf("The compound interest for a principal of %.2f at a rate of %.2f%% compounded %d times a year for %d years is: %.2f\n", pricipal, rate * 100, period, years, compoundInterest);
 
-    double amount = principal * pow(1 + rate / (100 * period), period * years);
-    printf("The amount is %.2lf\n", amount);
-
-
-    double compoundInterest = pricipal * pow(1 + rate / period, period * years) - pricipal;
-    printf("The compound interest for a pricipal of %.2f at a rate of %.2f%% compounded %d times a year for %d years is: %.2f\n", pricipal, rate * 100, period, years, compaundInterest);
-
-
-    return 0;
+	return 0;
 }
