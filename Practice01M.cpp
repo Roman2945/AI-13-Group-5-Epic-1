@@ -33,8 +33,8 @@ int main() {
     printf("The amount is %.2lf\n", amount);
 
 
-    double compoundInterest = pricipal * pow(1 + rate / period, period * years) - pricipal;
-    printf("The compound interest for a pricipal of %.2f at a rate of %.2f%% compounded %d times a year for %d years is: %.2f\n", pricipal, rate * 100, period, years, compaundInterest);
+    double compoundInterest = principal * pow(1 + rate / period, period * years) - pricipal;
+    printf("The compound interest for a principal of %.2f at a rate of %.2f%% compounded %d times a year for %d years is: %.2f\n", pricipal, rate * 100, period, years, compoundInterest);
 
 
     return 0;
